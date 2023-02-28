@@ -4,8 +4,6 @@
 
 [Overview](#overview)
 
-- [Questions & Answers](#questions--answers)
-
 [Testing](#testing)
 
 - [Local Testing](#local-testing)
@@ -25,6 +23,8 @@
 The mission for this project is to design and implement REST API services of Question&Answers module for eCommerce platform to support production level traffic. 
 
 The project was developed with Node, Express and MongoDB, deployed and tested on AWS EC2 with load-balancer NGINX(with cache feature enabled) and loader.io.  
+
+# Overview
 
 # Testing 
 
