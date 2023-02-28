@@ -34,6 +34,7 @@ The project was developed with Node, Express and MongoDB, deployed and tested on
 
 # Deployment
 
+# Performance Tuning & Optimization
 
 # Installation 
   To **build** and install all the dependencies
