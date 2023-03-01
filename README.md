@@ -27,37 +27,37 @@ This project was developed with NodeJS, Express and MongoDB, deployed on AWS EC2
 
 # Overview
 The Q&A API services includes following endpoints: 
-#### List Questions
+### List Questions
 ##### Retrieves a list of questions for a particular product. This list does not include any reported questions.
      GET /qa/questions
 <img width="600" alt="Add an answer form" src="https://user-images.githubusercontent.com/3084586/222243313-930e0607-aa1d-4472-8a86-2b2bafdcc853.png">
 
-#### Answers List
+### Answers List
 ##### Return all answers for a given question. This list does not include any reported answers.
     GET /qa/questions/:question_id/answers
 
-#### Add a Question
+### Add a Question
 ##### Adds a question for the given product
     POST /qa/questions
 <img width="600" alt="Add an answer form" src="https://user-images.githubusercontent.com/3084586/222244381-b4b95ace-189e-46c5-8e74-1bdeb883e1ca.png">
 
-#### Add an Answer
+### Add an Answer
 ##### Add an answer for a given question
     POST /qa/questions/:question_id/answers
 
-#### Mark Question as Helpful
+### Mark Question as Helpful
 ##### Updates a question to show it was found helpful.
     PUT /qa/questions/:question_id/helpful
     
-#### Report Question
+### Report Question
 ##### Updates a question to show it was reported. Note, this action does not delete the question, but the question will not be returned in the above GET request.
     PUT /qa/questions/:question_id/report
 
-#### Mark Answer as Helpful
+### Mark Answer as Helpful
 ##### Updates an answer to show it was found helpful 
     PUT /qa/answers/:answer_id/helpful
     
-#### Report Answer
+### Report Answer
 ##### Updates an answer to show it has been reported. Note, this action does not delete the answer, but the answer will not be returned in the above GET request
      PUT /qa/answers/:answer_id/report
 
