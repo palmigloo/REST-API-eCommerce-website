@@ -79,12 +79,14 @@ The project was developed with Node, Express and MongoDB, deployed and tested on
     - NewRelic
 
 # Author 
+<a href="https://github.com/palmigloo"><kbd><img width="175" alt="Abigail" src="https://user-images.githubusercontent.com/3084586/208263347-363a0895-7ede-40f6-8f82-83434178ed66.png"></kbd></a>
+
 Trilingual Software engineer professional based in Mountain View, CA.
 
 8 years international working experience in high tech and luxury retail, proficient in Full-stack development, with creativity and cross-cultural communication skills. 
 
 Start-up experience with multitasking abilities, working with client across Gaming, Media, eCommerce and Telecom industries.
 
-<a href="https://github.com/palmigloo"><kbd><img width="175" alt="Abigail" src="https://user-images.githubusercontent.com/3084586/208263347-363a0895-7ede-40f6-8f82-83434178ed66.png"></kbd></a>
+
 
 
