@@ -20,9 +20,10 @@
 
 # Project Description
 
-The mission for this project is to design and implement REST API services of Question&Answers module for eCommerce platform to support production level traffic. 
+The mission for this project is to redesign and implement REST API services for an appareal eCommerce platform to support production level traffic. 
+The newly inplemented server is able to handle up to 3K randomized Request per second with only 0.1% error rate and reduced response time by 96%(to 67ms).
 
-The project was developed with Node, Express and MongoDB, deployed and tested on AWS EC2 with load-balancer NGINX(with cache feature enabled) and loader.io.  
+This project was developed with NodeJS, Express and MongoDB, deployed on AWS EC2 with load-balancer NGINX(cache feature enabled), and load tested with various tools such as: Artillery, K6, loader.io, etc. 
 
 # Overview
 
