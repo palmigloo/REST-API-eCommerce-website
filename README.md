@@ -33,17 +33,18 @@ The Q&A API services includes following endpoints:
 <img width="600" alt="Add an answer form" src="https://user-images.githubusercontent.com/3084586/222243313-930e0607-aa1d-4472-8a86-2b2bafdcc853.png">
 
 #### Answers List
-##### Returns answers for a given question. This list does not include any reported answers.
+##### Return all answers for a given question. This list does not include any reported answers.
     GET /qa/questions/:question_id/answers
 
 #### Add a Question
 ##### Adds a question for the given product
     POST /qa/questions
-    
+<img width="600" alt="Add an answer form" src="https://user-images.githubusercontent.com/3084586/222244381-b4b95ace-189e-46c5-8e74-1bdeb883e1ca.png">
+
 #### Add an Answer
-##### Adds an answer for the given question
+##### Add an answer for a given question
     POST /qa/questions/:question_id/answers
-    
+
 #### Mark Question as Helpful
 ##### Updates a question to show it was found helpful.
     PUT /qa/questions/:question_id/helpful
@@ -51,7 +52,15 @@ The Q&A API services includes following endpoints:
 #### Report Question
 ##### Updates a question to show it was reported. Note, this action does not delete the question, but the question will not be returned in the above GET request.
     PUT /qa/questions/:question_id/report
-      
+
+#### Mark Answer as Helpful
+##### Updates an answer to show it was found helpful 
+    PUT /qa/answers/:answer_id/helpful
+    
+#### Report Answer
+##### Updates an answer to show it has been reported. Note, this action does not delete the answer, but the answer will not be returned in the above GET request
+     PUT /qa/answers/:answer_id/report
+
 # Testing 
 
 ### Local Testing 
