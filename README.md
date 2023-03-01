@@ -35,11 +35,14 @@ The Q&A API services includes following endpoints:
 ### Answers List
 ##### Return all answers for a given question. This list does not include any reported answers.
     GET /qa/questions/:question_id/answers
+<img width="600" alt="Add an answer form" src="https://user-images.githubusercontent.com/3084586/222246040-f0fd332b-521c-41d8-bded-d80eb6008bf3.png">
+<img width="600" alt="Add an answer form" src="https://user-images.githubusercontent.com/3084586/222245746-251b41ca-9013-40ee-8189-2026c401ab43.png">
 
 ### Add a Question
 ##### Adds a question for the given product
     POST /qa/questions
 <img width="600" alt="Add an answer form" src="https://user-images.githubusercontent.com/3084586/222244381-b4b95ace-189e-46c5-8e74-1bdeb883e1ca.png">
+
 
 ### Add an Answer
 ##### Add an answer for a given question
