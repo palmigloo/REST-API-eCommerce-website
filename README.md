@@ -20,13 +20,31 @@
 
 # Project Description
 
-The mission for this project is to redesign and implement REST API services for an appareal eCommerce platform to support production level traffic. 
-The newly inplemented server is able to handle up to 3K randomized Request per second with only 0.1% error rate and reduced response time by 96%(to 67ms).
+The mission for this project is to redesign and implement REST API services of Question&Answer module for an appareal eCommerce platform to support production level traffic. 
+The newly inplemented service is able to handle up to 3K randomized Request per second with only 0.1% error rate and reduced response time by 96%(to 67ms).
 
 This project was developed with NodeJS, Express and MongoDB, deployed on AWS EC2 with load-balancer NGINX(cache feature enabled), and load tested with various tools such as: Artillery, K6, loader.io, etc. 
 
 # Overview
+The Q&A API services includes following endpoints: 
+#### List Questions: Retrieves a list of questions for a particular product. This list does not include any reported questions.
+     GET /qa/questions
 
+#### Answers List: Returns answers for a given question. This list does not include any reported answers.
+    GET /qa/questions/:question_id/answers
+
+#### Add a Question: Adds a question for the given product
+    POST /qa/questions
+    
+#### Add an Answer: Adds an answer for the given question
+    POST /qa/questions/:question_id/answers
+    
+#### Mark Question as Helpful: Updates a question to show it was found helpful.
+    PUT /qa/questions/:question_id/helpful
+    
+#### Report Question: Updates a question to show it was reported. Note, this action does not delete the question, but the question will not be returned in the above GET request.
+    PUT /qa/questions/:question_id/report
+      
 # Testing 
 
 ### Local Testing 
