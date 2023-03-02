@@ -86,6 +86,12 @@ After deployment onf AWS EC2, I utilized loader.io to incrementally test the ser
 <img width="450" alt="Screen Shot 2023-03-02 at 11 02 16 AM" src="https://user-images.githubusercontent.com/3084586/222526478-39fc22f9-6dae-42fe-ac93-bc1bd90013ed.png">   <img width="450" src="https://user-images.githubusercontent.com/3084586/222526493-c5156841-ef69-40c8-918a-90c51aa66582.png">
 
 # Performance Tuning & Optimization
+Performance Tuning is the most important part of this project, it helped the server from only supporting 300RPS to 3000RPS by adding additional EC2 servers, implementing NGINX load balancer, setting up Cache on reverse proxy and adding more worker connection on NGINX, etc.
+##### Steps:
+     - Adding additional servers 
+     - Setup NGINX
+     - Setup Cache
+     - Increase amount of worker connection
 
 # Installation 
   To **build** and install all the dependencies
