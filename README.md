@@ -70,7 +70,7 @@ The goal of load testing is to determine new API server's capacity, scalability,
 It composes of 2 different phases: local testing and cloud-based testing, local testing aims to set up a baseline for server's capacity in a local setting, while Cloud-based load testing focus on testing deployed server's capacity and push it to its maximum for future optimization.
 
 ### Local Load Testing 
-During local testing, the load is increased incrementally until the system reaches its maximum capacity using Autocannon and K6, and the maximum load the server can handle is around 1k. 
+During local testing, the load is increased incrementally until the system reaches its maximum capacity using Autocannon and K6, and the maximum load the server can handle is around **1k**. 
 ##### Tools : Autocannon, K6
 ```jsx
 autocannon -c 1000 http://localhost:3000/qa/questions?product_id=7&count=5
@@ -79,6 +79,8 @@ autocannon -c 1000 http://localhost:3000/qa/questions?product_id=7&count=5
 
 ### Cloud-based Load Testing 
 ##### Tools: Loader.io
+<img width="450" alt="Screen Shot 2023-03-02 at 11 02 16 AM" src="https://user-images.githubusercontent.com/3084586/222526478-39fc22f9-6dae-42fe-ac93-bc1bd90013ed.png">   <img width="450" src="https://user-images.githubusercontent.com/3084586/222526493-c5156841-ef69-40c8-918a-90c51aa66582.png">
+
 # Deployment
 
 # Performance Tuning & Optimization
