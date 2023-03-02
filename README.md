@@ -78,6 +78,7 @@ autocannon -c 1000 http://localhost:3000/qa/questions?product_id=7&count=5
 <img width="600" alt="Add an answer form" src="https://user-images.githubusercontent.com/3084586/222520702-2d59a0ab-16bd-418e-95ea-2f92b7983bb7.png">
 
 ### Cloud-based Load Testing 
+After deployment onf AWS EC2, I utilized loader.io to incrementally test the server and find out the maximum load capacity was around 300 RPS, which is the baseline for future improvement 
 ##### Tools: Loader.io
 <img width="450" alt="Screen Shot 2023-03-02 at 11 02 16 AM" src="https://user-images.githubusercontent.com/3084586/222526478-39fc22f9-6dae-42fe-ac93-bc1bd90013ed.png">   <img width="450" src="https://user-images.githubusercontent.com/3084586/222526493-c5156841-ef69-40c8-918a-90c51aa66582.png">
 
