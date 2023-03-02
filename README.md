@@ -67,18 +67,18 @@ The Q&A API services includes following endpoints:
 # Load Testing 
 The goal of load testing is to determine new API server's capacity, scalability, and stability under different levels of load, record system's response time, throughput, and resource utilization to identify any performance bottlenecks or other issues that may affect the system's reliability or user experience. 
 
-It composes of 2 different phases: local testing and cloud-based testing, local testing aims to set up a baseline/minimal level for server's capacity in a local setting, while Cloud-based load testing focus on testing deployed server's capacity and push it to its maximum for future optimization.
+It composes of 2 different phases: local testing and cloud-based testing, local testing aims to set up a baseline for server's capacity in a local setting, while Cloud-based load testing focus on testing deployed server's capacity and push it to its maximum for future optimization.
 
 ### Local Load Testing 
-During local testing, the load is increased incrementally until the system reaches its maximum capacity using Autocannon and K6
-Tools : Autocannon, K6
+During local testing, the load is increased incrementally until the system reaches its maximum capacity using Autocannon and K6, and the maximum load the server can handle is around 1k. 
+##### Tools : Autocannon, K6
 ```jsx
 autocannon -c 1000 http://localhost:3000/qa/questions?product_id=7&count=5
 ```
 <img width="600" alt="Add an answer form" src="https://user-images.githubusercontent.com/3084586/222520702-2d59a0ab-16bd-418e-95ea-2f92b7983bb7.png">
 
 ### Cloud-based Load Testing 
-Tools: Loader.io
+##### Tools: Loader.io
 # Deployment
 
 # Performance Tuning & Optimization
