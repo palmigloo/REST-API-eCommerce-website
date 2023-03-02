@@ -4,10 +4,10 @@
 
 [Overview](#overview)
 
-[Testing](#testing)
+[Load Testing](#testing)
 
-- [Local Testing](#local-testing)
-- [Cloud-based Testing](#cloud-based-testing)
+- [Local Load Testing](#local-load-testing)
+- [Cloud-based Load Testing](#cloud-based-load-testing)
 
 [Deployment](#deployment)
 
