@@ -4,12 +4,13 @@
 
 [Overview](#overview)
 
+[Deployment](#deployment)
+
 [Load Testing](#testing)
 
 - [Local Load Testing](#local-load-testing)
 - [Cloud-based Load Testing](#cloud-based-load-testing)
 
-[Deployment](#deployment)
 
 [Performance Tuning & Optimization](#performance-tuning--optimization)
 
@@ -64,6 +65,8 @@ The Q&A API services includes following endpoints:
 ##### Updates an answer to show it has been reported. Note, this action does not delete the answer, but the answer will not be returned in the above GET request
      PUT /qa/answers/:answer_id/report
 
+# Deployment
+
 # Load Testing 
 The goal of load testing is to determine new API server's capacity, scalability, and stability under different levels of load, record system's response time, throughput, and resource utilization to identify any performance bottlenecks or other issues that may affect the system's reliability or user experience. 
 
@@ -81,8 +84,6 @@ autocannon -c 1000 http://localhost:3000/qa/questions?product_id=7&count=5
 After deployment onf AWS EC2, I utilized loader.io to incrementally test the server and find out the maximum load capacity was around 300 RPS, which is the baseline for future improvement 
 ##### Tools: Loader.io
 <img width="450" alt="Screen Shot 2023-03-02 at 11 02 16 AM" src="https://user-images.githubusercontent.com/3084586/222526478-39fc22f9-6dae-42fe-ac93-bc1bd90013ed.png">   <img width="450" src="https://user-images.githubusercontent.com/3084586/222526493-c5156841-ef69-40c8-918a-90c51aa66582.png">
-
-# Deployment
 
 # Performance Tuning & Optimization
 
