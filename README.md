@@ -89,7 +89,7 @@ After deployment onf AWS EC2, I utilized loader.io to incrementally test the ser
 Performance Tuning is the most important part of this project, it helped the server from only supporting 300RPS to 3000RPS by adding additional EC2 servers, implementing NGINX load balancer, setting up Cache on reverse proxy and adding more worker connection on NGINX, etc.
 ##### Steps:
      - Adding additional servers 
-     - Setup NGINX
+     - Setup NGINX 
      - Setup Cache
      - Increase amount of worker connection
 
